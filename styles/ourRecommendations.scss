@@ -1,0 +1,167 @@
+@import "../styles/variables";
+
+.ourRecommendations {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    background-color: #000;
+    padding: 14rem 0rem;
+    @media (max-width:991px) {
+        padding: 9rem 0;
+    }
+    @media (max-width:767px) {
+        padding: 6.4rem 0;
+    }
+}
+.topBlockContent {
+    padding-bottom: 14rem;
+    @media (max-width:767px) {
+        padding-bottom: 4rem
+    }
+    .flexWrapper {
+        gap: 35.6rem;
+        @media (max-width:1199px) {
+            gap: 50px
+        }
+        @media (max-width:767px) {
+            gap: 2rem
+        }
+    }
+
+    .headingBlock {
+        width: 39rem;
+        @media (max-width:767px) {
+            width: 100%;
+        }
+        h3{
+            @media (max-width:767px) {
+                font-size: 1.0rem;
+                line-height: 1.1rem;
+            } 
+        }
+        h2 {
+            @media (max-width:1199px) {
+                font-size: 28px;
+                line-height: 32px;
+            }
+            @media (max-width:767px) {
+                margin-bottom: 0;
+                margin-top: 7px;
+                font-size: 1.8rem;
+                max-width: 24.3rem;
+                line-height: 2.1rem;
+            }
+        }
+    }
+
+    .content {
+        width: 47.8rem;
+        @media (max-width:767px) {
+            width: 100%;
+        }
+        p {
+            margin: 0;
+            @media (max-width:767px) {
+                font-size: 1.4rem;
+                line-height: 2.2rem;  
+            }
+        }
+    }
+}
+
+.accordionRecommendate {
+    padding-left: 8.8rem;
+    width: 144rem;
+    margin: auto;
+    @media (max-width:1199px) {
+        width: 100%;
+        padding-left: 3rem;
+    }
+    @media (max-width:991px) {
+        padding:0rem 16px;
+    }
+    @media (max-width:767px) {
+        width: 100%;
+        padding: 0 1.6rem;
+    }
+    .flexWrapper {
+        gap: 12.7rem;
+        flex-wrap: unset;
+        @media (max-width:1199px) {
+            gap: 50px
+        }
+        @media (max-width:991px) {
+            flex-direction: column-reverse;
+            gap: 3.8rem;
+        }
+    }
+    .accordionBlock {
+        width: 52.1rem;
+        @media (max-width:1199px) {
+            width: 700px;
+        }
+        @media (max-width:991px) {
+            width: 100%;
+        }
+        .heading {
+            margin-bottom: 3.2rem;
+            border-bottom: 1px solid rgba(48, 48, 48, 1);
+            cursor: pointer;
+            @media (max-width:767px) {
+                margin-bottom: 2.3rem;
+            }
+            &.active {
+                border-color: $primary;
+            }
+            h2 {
+                padding: 4rem 0rem 2.7rem 0;
+                margin: 0;
+                @media (max-width:1199px) {
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+                @media (max-width:767px) {
+                    font-size: 16px;
+                    line-height: 18px;
+                    padding: 26px 0;
+                }
+                
+            }
+        }
+        .content {
+            overflow: hidden;
+            transition: height 0.3s ease-in-out;
+            &.active {
+            }
+            p {
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+    .accordionImgWrapper {
+        width: 70.4rem;
+        @media (max-width:991px) {
+            width: 100%;
+        }
+        .imgWrapper {
+            display: none;
+            visibility: hidden;
+            transition: all 4s ease-in-out;
+            height: 63.8rem;
+            @media (max-width:1199px) {
+                height: 560px;
+            }
+            @media (max-width:767px) {
+                height: auto    ;
+            }
+            &.active {
+                display: flex;
+                visibility: visible;
+            }
+            img{
+                object-fit: cover;
+                // width: 100%;
+            }
+        }
+    }
+}

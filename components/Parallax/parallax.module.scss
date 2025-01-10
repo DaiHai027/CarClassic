@@ -1,0 +1,67 @@
+.parallax {
+    display: block;
+
+    div>div {
+        will-change: transform;
+    }
+    &.aspectRatio {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1920 / 899;
+        @media (max-width:1700px) {
+            aspect-ratio: 1600 / 786;
+        }
+        @media (max-width:1599px) {
+            aspect-ratio: 1536 / 760;
+        }
+        @media (max-width:1500px) {
+            aspect-ratio: 1440 / 700;
+        }
+        @media (max-width:1400px) {
+            aspect-ratio: 1366 / 680;
+        }
+        @media (max-width:1300px) {
+            aspect-ratio: 1280 / 630;
+        }
+        @media (max-width:1199px) {
+            aspect-ratio: 1024 / 550;
+        }
+        @media (max-width:991px) {
+            // aspect-ratio: 768 / 435;
+            // aspect-ratio: 768 / 471;
+             aspect-ratio: 768 / 920;
+        }
+
+        @media (max-width:767px) {
+            aspect-ratio:auto;
+        }
+        @media (max-width:575px) {
+            aspect-ratio: 375 / 529;
+        }
+        img {
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 2 / 1;
+            width: 100%;
+            @media (max-width:1199px) {
+                aspect-ratio: auto;
+            }
+
+            @media (max-width:991px) {
+                aspect-ratio: 1 /1.2;
+            }
+
+            @media (max-width:767px) {
+                // aspect-ratio: 1 /1.2;
+                aspect-ratio: auto;
+            }
+
+            @media (max-width:575px) {
+                aspect-ratio: 1 / 1.4;
+            }
+        }
+
+    }
+
+}

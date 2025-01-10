@@ -1,0 +1,209 @@
+.highlighter {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    &.alt {
+        // margin-bottom: 14rem;
+        @media (max-width:1199px) {
+            margin-bottom: 0px;
+        }
+        .wrapper {
+            padding: 0;
+        }
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        width: 29.2rem;
+        
+        @media (max-width:1199px ){
+            font-size: 20px;
+            line-height: 24px;
+        }
+        @media (max-width:991px ){
+            width: 235px;
+            
+        }
+        @media (max-width:767px ){
+            // font-size: 1.8rem;
+            // line-height: 2.13rem;
+            width: auto;
+            font-size: 18px;
+            line-height: 21px;
+            margin: 0;
+        }  
+    }
+    p {
+        font-size: 2.4rem;
+        line-height: 4.2rem;
+        @media (max-width:1199px ){
+            font-size: 18.5px;
+            line-height: 32.18px;
+        }
+    }
+    .content {
+        width: 60.6rem;
+        @media (max-width:1199px ){
+            width: 465px;
+        }
+        @media (max-width:991px ){
+            width: 451px;
+        }
+        &.altContent{
+             width:  58.5rem;
+            @media (max-width:1199px ){
+                width: 449px;
+            } 
+            
+        }
+        @media (max-width:767px){
+            width: 100%;
+        }
+        img{
+            @media (max-width:1199px) {
+               width: 200px;
+               height: 55px;
+               object-fit: contain;
+            }
+            @media (max-width:767px) {
+               width: 164px;
+               height: 40px; 
+            }
+        }
+    }
+    .flexWrapper {
+        gap: 8rem;
+        max-width: 104.8rem;
+        margin: auto;
+        @media (max-width:1199px ){
+            gap: 95px;
+            max-width: 1004px;
+            margin: 0 auto;
+            // justify-content: center;
+        }
+        @media (max-width: 991px) and (orientation: landscape) {
+            gap:8rem
+        }
+        @media (max-width:991px ){
+            gap: 20px;
+        }
+    }
+    .btn_wrapper {
+        gap: 2.6rem;
+        display: flex;
+        overflow: hidden;
+        padding-bottom: 2px;
+        width: max-content;
+    }
+    .btnWrapper {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 2px;
+        width: max-content;
+    }
+    &.alt {
+        padding-top: 13.9rem;
+        padding-bottom: 14.9rem;
+        @media (max-width:991px ){
+            padding: 9rem 0rem;
+        }
+        @media (max-width:767px) {
+            padding: 6.4rem 0rem;
+        }
+        .btn_wrapper {
+            margin-bottom: 4.6rem;
+            @media (max-width:991px) {
+             margin-bottom: 3.2rem;
+            }
+        }
+        h2 {
+            font-size: 3.2rem;
+            line-height: 3.8rem;
+            width: 36rem;
+            @media (max-width:991px) {
+                font-size: 22px;
+                line-height: 28px;
+                width: 250px;
+            }
+        }
+    }
+    &.advise {
+        h2 {
+            @media(max-width:767px) {
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
+        }
+        p {
+            @media(max-width:767px) {
+                font-size: 1.6rem;
+                line-height: 3rem;
+                margin-bottom: 0;
+            }
+        }
+
+    }
+    &.adviseAlt {
+        h2 {
+            @media (max-width:767px) {
+                font-size: 1.8rem;
+                line-height: 2.1rem;
+            }
+        }
+        p {
+            @media (max-width:767px) {
+                font-size: 1.4rem;
+                line-height: 2.1rem;
+            }
+        }
+        .btn_wrapper {
+            @media (max-width:767px) {
+                display: block;
+            }
+            .btnWrapper {
+                @media (max-width:767px) {
+                    width: max-content;
+                    margin-bottom: 3.2rem;
+                }
+            }
+        }
+        .content {
+            img {
+                @media (max-width:767px) {
+                    width: 16.6rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+    .highlighter {
+        h2 {
+            font-size: 1.8rem;
+            line-height: 2.13rem;
+            width: auto;
+            margin: 0;
+        }
+        &.alt {
+            h2 {
+                font-size: 1.8rem;
+                line-height: 2.13rem;
+                width: auto;
+                margin: 0;
+            }
+        }
+        .flexWrapper {
+            gap: 1.8rem;
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+
+        .btn_wrapper{
+            width: max-content
+        }
+    }
+}

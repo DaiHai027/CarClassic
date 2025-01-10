@@ -1,0 +1,234 @@
+#light-box {
+    display: none;
+    position: fixed;
+    z-index: 1003;
+    background: rgba(0, 0, 0, .95);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    transform: none;
+    max-width: initial;
+  
+    .model-img {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      position: relative;
+      background-color: none;
+      top: 40%;
+      transform: translateY(-40%);
+      left: 0;
+      right: 0;
+      z-index: 10;
+      max-width: 83.3vw;
+      max-height: 86vh;
+      @media (max-width:575px) {
+        padding: 0px;
+        max-width: initial;
+        height: 250px;
+      }
+      .img-wrapper {
+        #image-back {
+          width: 100%;
+         height: 100vh;
+          max-height:calc(100vh - 205px) ;
+          object-fit: cover;
+          user-select: none;
+        
+          @media (max-width:991px) {
+            max-height: 410px;
+          }
+          @media (max-width:575px) {
+            height: 250px;
+          }
+        }
+        video {
+          width: 100%;
+          height: 100%;
+        }
+      }  
+    }
+    .ThumbsBlockLightBox {
+        display: flex;
+        justify-content: center;
+        gap:1.2rem;
+        margin-top: 15rem;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        @media (max-width:575px) {
+            width: max-content;
+            bottom: -60px;
+        }
+        .sliderThumbsBlock{
+            cursor: pointer;
+            &.active{
+                opacity: 0.5;
+            
+            }
+
+        }
+        img{
+            width: 10vh;
+            height: 10vh;
+            border: 1px solid transparent;
+            object-fit: cover;
+            @media (max-width:767px) {
+                // width: 6.7rem;
+                // height: 4.5rem;
+                margin: 0;
+            }
+        }
+    }
+  }
+  
+  .light-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    .img-box {
+      width: 19%;
+      margin-bottom: 10px;
+      @media (max-width: 991px) {
+        width: 46%;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+      display: block;
+      cursor: pointer;
+      img {
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        height: 250px;
+        user-select: none;
+        @media (max-width: 991px) {
+          height: 350px;
+        }
+      }
+      svg {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  .none {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+
+  #next {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    right: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+
+    }
+    @media (max-width:991px) {
+        top: 40%;
+        transform: translateY(-40%);
+        right: 20px;
+        z-index: 11;
+    }
+    @media (max-width:767px) {
+        display: none;
+    }
+  }
+  #Prev {
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    left: 30px;
+    transform: translateY(-50%);
+    svg {
+      width: 20px;
+    }
+    @media (max-width:991px) {
+        top: 40%;
+        transform: translateY(-40%);
+        left: 20px;
+        z-index: 11;
+    }
+    @media (max-width:767px) {
+        display: none;
+    }
+  }
+  #btn-close-img {
+    top: 20px;
+    position: absolute;
+    right: 25px;
+    width: 23px;
+    height: 29px;
+    background: transparent;
+    border: 0;
+    outline: none;
+        @media (max-width:991px) {
+            top:10px;
+            right: 20px;
+        }
+    @media (max-width:575px) {
+        top:10px;
+    }
+    svg {
+      width: 30px !important;
+      border-radius: 0.25rem;
+      padding: 5px;
+      path{
+        fill:white
+      }
+    }
+    text-align: right;
+    cursor: pointer;
+  }
+  .arrowDisable{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }
+  .thumbnailLightBoxWrapper{
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+  }
+  .desktopthumbnailLightBox{
+    display: block;
+    @media (max-width:991px) {
+        display: none;
+    }
+  }
+  .mblthumbnailLightBox{
+    display: none;
+    @media (max-width:991px) {
+        display: block;
+        position: relative;
+        bottom: -40%;
+        }
+        @media (max-width:767px) {
+            bottom:-49%;
+            }
+    .ThumbsBlockLightBox{
+        display: flex!important;
+        position: relative!important;
+        margin-top: 0!important;
+        bottom: 0!important;   
+    }
+  }
+  .hidden-scroll{
+    overflow: hidden;
+    height: auto;
+  }

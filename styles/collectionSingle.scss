@@ -1,0 +1,623 @@
+@import "../styles/variables";
+.bgImg.collectieSingleBanner {
+    padding: 0!important;
+    min-height: initial!important;
+    img{
+        min-width: 100%!important;
+    }
+    position: relative;
+    .absoluteWrapper{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+.carDescription,
+.carHighLight,
+.carInformation {
+    position: relative;
+    z-index: 1;
+    background-color: #000;
+    color: #fff
+}
+
+.carInformation {
+    padding: 14rem 0rem 7rem 0rem;
+    @media (max-width:767px) {
+        padding: 6.4rem 0rem 0rem 0rem;
+    }
+}
+
+.infoContainer {
+    max-width: 113.8rem;
+    margin: 0 auto;
+    // &.lgBlock {
+    //     display: block;
+    //     @media (max-width:575px) {
+    //         display: none;
+    //     }
+    // }
+
+    &::after {
+        content:unset;
+        // position: absolute;
+        // width: 100%;
+        // height: 2px;
+        // border-bottom: 1px solid rgba(48, 48, 48, 1);
+        // transform: translateY(-50%);
+        // top: 50%;
+        // max-width: 1138px;
+        // margin: 0 auto;
+        // left: 0;
+        // right: 0;
+        // @media (max-width:991px) {
+        //     transform: translateY(-38%);
+        //     top: 38%;
+        // }
+        // @media (max-width:575px) {
+        //     content:unset;
+        // }
+    }
+    &.smBlock {
+        // display: none;
+        // @media (max-width:575px) {
+        //     display: block;
+        // }
+        .carInfoInnerBlock{
+            @media (max-width:767px) {
+                justify-content: unset;
+                width: auto;
+            }
+        }
+    }
+
+}
+
+.topBlock {
+    padding-bottom: 6rem;
+    gap: 8rem;
+    // border-bottom: 1px solid rgba(48, 48, 48, 1);
+    @media (max-width:991px) {
+        gap: 7rem;
+        // justify-content: space-between;
+    }
+    @media (max-width:767px) {
+        gap: 4rem 4rem;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+    @media (max-width:575px) {
+        // gap: 4rem 8rem;
+    }
+   
+
+    &::after {
+        content: unset;
+        @media (max-width:575px) {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            border-bottom: 1px solid rgba(48, 48, 48, 1);
+            top: 9rem;
+        }
+    }
+}
+
+.bottomBlock {
+    padding-top: 6rem;
+    gap: 7rem;
+    @media (max-width:991px) {
+        // gap: 3rem;
+        // justify-content: space-between;
+    }
+    @media (max-width:767px) {
+        gap: 4rem 8rem;
+        padding-top: 4rem;
+        justify-content: unset;
+    }
+}
+
+.carInfoInnerBlock {
+    span {
+        color: rgba(181, 181, 181, 1);
+        font-size: 18px;
+        line-height: 3.2rem;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 1.6rem;
+        display: inline-block;
+
+        @media (max-width:767px) {
+            line-height: 1.4rem;
+            font-size: 1.2rem;
+            margin-bottom: .8rem;
+        }
+        
+    }
+
+    p {
+        font-size: 4.5rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 6.1rem;
+        margin-bottom: 0;
+
+        @media (max-width:767px) {
+            font-size: 3.0rem;
+            line-height: 3.5rem;
+
+        }
+    }
+}
+
+.carDescription {
+    padding: 43.6rem 0 0rem 0;
+
+    @media (max-width:1199px) {
+        padding: 28.6rem 0 0rem 0;
+    }
+    @media (max-width:991px) {
+        padding: 20.6rem 0 0rem 0;
+    }
+    @media (max-width:767px) {
+        padding-top: 6.4rem;
+    }
+
+    .infoContainer {
+        padding-bottom: 7.7rem;
+        border-bottom: 1px solid rgba(48, 48, 48, 1);
+
+        @media (max-width:767px) {
+            padding-bottom: 4.6rem;
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+
+        @media (max-width:767px) {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            margin-bottom: 1.8rem;
+        }
+    }
+    li,
+    p {
+        font-size: 2.4rem;
+        line-height: 4.2rem;
+        margin-bottom: 2.1rem;
+
+        @media (max-width:767px) {
+            font-size: 1.6rem;
+            line-height: 3rem;
+        }
+    }
+
+    .descriptionBlock {
+        justify-content: space-between;
+    }
+
+    .descriptionHeading {}
+
+    .descriptionContent {
+        width: 60rem;
+        li ,
+        span,
+        p {
+
+            font-size: 2.4rem;
+            line-height: 4.2rem;
+            margin-bottom: 2.1rem;
+    
+            @media (max-width:767px) {
+                font-size: 1.6rem;
+                line-height: 3rem;
+            }
+        }
+        ul{
+            padding-left: 25px;
+        }
+    }
+}
+
+.carHighLight {
+    padding: 10rem 0 14rem 0;
+
+    @media (max-width:767px) {
+        padding: 6.4rem 0 0 0rem;
+    }
+    .infoContainer {
+        max-width: 106.2rem;
+    }
+}
+
+.carHighLightBlock {
+    gap: 1.9rem;
+    @media (max-width:767px) {
+        gap: 0
+    }
+}
+
+.CarHighLightInnerBlock {
+    width: 51.6rem;
+    @media(max-width:991px) {
+        width: 37.6rem;
+    }
+    @media(max-width:767px) {
+        width: 100%;
+        margin-bottom: 6.4rem;
+    }
+
+    h2 {
+        font-size: 2.0rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 2.34rem;
+        text-transform: uppercase;
+        margin-bottom: 2.6rem;
+        @media(max-width:767px) {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            margin-bottom: 1.8rem;
+        }
+
+        span {
+            color: rgba(181, 181, 181, 1);
+            @media(max-width:767px) {
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                margin-bottom: 1.8rem;
+                padding-left: 2px;
+            }
+        }
+    }
+
+    ul {
+        padding-left: 2rem;
+    }
+}
+
+.carHighLightTop {
+    padding-bottom: 10rem;
+    border-bottom: 1px solid rgba(48, 48, 48, 1);
+    @media (max-width:767px) {
+        padding-bottom: 0rem;
+    }
+}
+
+.carHighLightbottom {
+    padding-top: 10rem;
+    @media (max-width:767px) {
+        padding-top: 6.4rem;
+    }
+}
+
+.SinglePageSlider {
+    position: relative;
+    z-index: 2;
+    background-color: #000;
+    height: 80vh;
+
+    @media (max-width:991px) {
+        height: 40vh;
+    }
+    @media (max-width:767px) {
+        height: auto;
+        padding-top: 6.4rem;
+        padding-bottom: 2.8rem;
+    }
+
+    .sliderContent {
+        position: absolute;
+        bottom: 8rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 40rem;
+
+        @media (max-width:991px) {
+            bottom: 6rem;
+        }
+
+        @media (max-width:767px) {
+            max-width: 16rem;
+            bottom: 4rem;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-size: 2.0rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 2.3rem;
+            color: rgba(181, 181, 181, 1);
+            text-align: center;
+            @media (max-width:767px) {
+                font-size: 1rem;
+                line-height: 1.1rem;
+            }
+        }
+
+        span {
+            display: inline-block;
+            color: #fff;
+
+            @media (max-width:767px) {
+                font-size: 1rem;
+                line-height: 1.1rem;
+            }
+        }
+    }
+
+    .slidesImageBlock {
+        position: relative;
+        background-color: #000;
+        padding: 7rem 0rem 0rem 0rem;
+        // transform: scale(0);
+    }
+    .sliderBlock {
+        position: relative;
+        height: 80vh;
+
+        @media (max-width:991px) {
+            height: auto;
+        }
+        @media (max-width:767px) {
+            height: 300px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 27%, #000000 100%);
+            top:auto;
+            bottom: -1px;
+        }
+        img{
+            height: 80vh;
+            object-fit: cover;
+
+            @media (max-width:991px) {
+                height: auto;
+            }
+            @media (max-width:767px) {
+                height: 100%;
+            }
+        }
+    }
+   
+    .slick-prev:before,
+    .slick-next:before {
+        content: unset;
+    }
+
+    button {
+        position: absolute;
+        z-index: 4;
+        bottom: 8rem;
+        top: unset;
+
+        @media (max-width:991px) {
+            bottom: 15rem;
+        }
+        @media (max-width:767px) {
+            display: none !important;
+        }
+
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 74px;
+        height: 74px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+
+        @media (max-width:991px) {
+            width: 45px;
+            height: 45px;
+        }
+
+        svg {
+            path {
+                fill: #fff
+            }
+        }
+
+        &.active {
+            border: 1px solid #D4AF37;
+
+            svg {
+                path {
+                    fill: #D4AF37
+                }
+            }
+        }
+    }
+
+    .slick-next {
+        right: 6rem;
+        left: unset;
+
+        @media (max-width:991px) {
+            right: 3rem;
+        }
+    }
+
+    .slick-prev {
+        right: 18.2rem;
+
+        left: unset;
+
+        @media (max-width:991px) {
+            right: 10.2rem;
+        }
+    }
+
+    .lightBoxs{
+        .ThumbsBlock {
+            display: none;
+        }
+    }
+    .ThumbsBlock {
+        bottom: unset;
+        gap: 3.2rem;
+        margin: 0;
+        max-width: 127rem;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: -23rem;
+        position: absolute;
+
+        @media (max-width:1199px) {
+            bottom: -16rem;
+        }
+        @media (max-width:767px) {
+            bottom: 2.8rem;
+        }
+
+        @media (max-width:480px) {
+            bottom: -4rem;
+        }
+    }
+
+    .slidesImageBlock {
+        .slick-track {
+            display: block;
+        }
+        .slick-slide{
+            opacity: 1!important;
+        }
+    }
+
+    .ThumbsBlock {
+        // background-color: #000;
+        .slick-track {
+            width: 100%!important;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+
+            @media (max-width:991px) {
+                gap:2rem;
+                // width: max-content !important;
+                
+            }
+            @media (max-width:767px) {
+                overflow-x: scroll;
+                scrollbar-color: transparent transparent;
+                gap: 1.6rem;
+                margin-left: 1.6rem;
+                transform: unset !important;
+            }
+        }
+    }
+
+    .sliderThumbsBlock {
+        // width: 13.8rem;
+        width: 20.3rem !important;
+        height: 14.4rem;
+        border: 1px solid transparent;
+
+        @media (max-width:767px) {
+            width: 7.8rem!important;
+            height: 5rem;
+            width: auto;
+            margin: 0;
+        }
+      
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            @media (max-width:767px) {
+                // height: 4.5rem;
+                // object-fit: contain;
+            }
+        }
+
+    }
+
+    .sliderThumbsBlock {
+        transition: all .1s ease;
+        position: relative;
+        &.active {
+            // border: 2px solid rgba(212, 175, 55, 1)
+            opacity: .5;
+            &::after{
+                content:"";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                top:0;
+                left: 0;
+                }
+        }
+    }
+    .slick-slide
+    {
+        // width: 100%;
+        img{
+           width: 100%;
+       }
+        
+    }
+
+}
+.collectieSingleBannerMbl{
+    &.banner{
+        padding: 0;
+        min-height: initial;
+    }
+    display: none;
+    background-color: #000;
+    @media (max-width:767px) {
+        display: block;
+        h1{
+            font-size: initial;
+            line-height: initial;
+            padding-top: 12rem;
+            padding-bottom: 4rem;
+             span{
+            font-size: 2.8rem;
+          line-height: 3.3rem;
+        }
+        .imgWrapper{
+            display: flex;
+        }
+    }
+    }
+}
+
+.hasLightBox{
+    .slick-arrow{
+        visibility: hidden;
+    }
+    .SinglePageSlider{
+        .ThumbsBlock{
+            visibility: hidden;
+        }
+     }
+}
+.collectieSingleBannerMbl   {
+    h1{
+        span{
+           span{
+            @media (max-width:767px) {
+                display: block;
+            }
+           }
+        }
+    }
+}

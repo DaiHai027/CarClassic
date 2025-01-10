@@ -1,0 +1,482 @@
+.topHeadingBlock {
+    margin-bottom: 10rem;
+    gap: 33.6rem;
+}
+
+.contactBanner {
+    .headingBlock {
+        width: 43.2rem;
+    }
+
+    .block {
+        gap: 21.6rem;
+
+        @media (max-width:767px) {
+            gap: 2.2rem
+        }
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+
+}
+
+.contactSection {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 14rem 0;
+    background-color: #000;
+
+    .headingBlock {
+        width: 40rem;
+
+        h3 {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            line-height: 3.7rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .contentBlock {
+        width: 40rem;
+
+        p {
+            font-size: 2rem;
+            line-height: 3.2rem;
+            margin: 0;
+
+            span {
+                display: block;
+                font-size: 2rem;
+                color: #B5B5B5;
+            }
+        }
+    }
+}
+
+.filterTabs {
+    margin-bottom: 10rem;
+
+    ul {
+        display: flex;
+        gap: 4rem;
+    }
+
+    li {
+        cursor: pointer;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid #303030;
+        font-size: 2.8rem;
+        line-height: 3.3rem;
+        min-width: max-content;
+        list-style-type: none;
+
+        &.activeheading {
+            border-color: #D4AF37;
+        }
+    }
+}
+
+.filterResult {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.2rem 3.2rem;
+    max-width: 83.2rem;
+    display: none;
+
+    &.activeTabs {
+        display: flex !important;
+    }
+}
+
+.form__group {
+    position: relative;
+    width: 40rem;
+    display: flex;
+
+    &.w100 {
+        width: 83.2rem;
+    }
+
+    label,
+    .form__field:focus~.form__label {
+        position: absolute;
+        top: -2rem;
+        display: block;
+        transition: 0.2s;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+
+    }
+
+}
+
+.form__field {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #303030;
+    outline: 0;
+    font-size: 2rem;
+    line-height: 4.2rem;
+    color: #212121;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 16px;
+    cursor: text;
+    top: -1rem;
+    font-size: 2rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.02em;
+    color: #B5B5B5;
+}
+
+
+
+
+.form__label {
+    pointer-events: none;
+    color: #B5B5B5 !important;
+}
+
+.form__field:focus~.form__label {
+    color: #B5B5B5;
+}
+
+.form__field:focus {
+    border-bottom: 2px solid #D4AF37;
+}
+
+.filterBlock {
+    .btn-wrapper {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 2px;
+        display: inline-block;
+
+        a {
+            font-size: 2.2rem;
+            line-height: 4.4rem;
+            letter-spacing: 0.02em;
+            border-bottom: 0;
+            display: flex;
+            padding-bottom: 0.8rem;
+
+            &:after {
+                background-color: #fff;
+                bottom: .5rem;
+            }
+        }
+    }
+}
+
+.topHeadingBlock~.topHeadingBlock {
+    gap: 0;
+    margin-top: 14rem;
+    margin-bottom: 0;
+
+    .headingBlock {
+        width: 100%;
+    }
+
+    .block {
+        margin-top: 7.2rem;
+        display: flex;
+        gap: 14rem;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                width: 28rem;
+            }
+        }
+
+        p {
+            max-width: 29.2rem;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+
+        .btn_wrapper {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 2px;
+            display: inline-block;
+        }
+
+        a.btn {
+            font-size: 2.2rem;
+            line-height: 4.4rem;
+            letter-spacing: 0.02em;
+            border-bottom: 0px;
+            padding-bottom: 0.8rem;
+
+            &:after {
+                background-color: #fff;
+                bottom: .5rem;
+            }
+        }
+    }
+}
+
+.tb_container {
+    img {
+        width: 200px;
+        height: auto;
+        display: none;
+        margin-bottom: 30px;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        width: 83.2rem;
+        height: 16.7rem;
+        border-radius: 2px;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: 1px solid #FFFFFF66;
+        position: initial;
+        text-align: center;
+        flex-direction: column;
+            @media (max-width:767px) {
+                width: 100%;
+                height: auto;
+                padding: 17px;
+                display: block;
+            }
+        span {
+            font-size: 2rem;
+            line-height: 4.2rem;
+            color: #b5b5b5;
+            width: 100%;
+            display: inline-block;
+
+            ~span {
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+
+    svg {
+        min-width: 2.6rem;
+        min-height: 2.6rem;
+    }
+
+    .tb_img_view {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.filterBlock {
+    textarea {
+        overflow: hidden;
+        resize: none;
+        line-height: 3.2rem;
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner.contactBanner {
+        background-position: 33% center !important;
+    }
+
+    .contactSection {
+        padding: 6.4rem 0;
+    }
+
+    .topHeadingBlock {
+        gap: 1.8rem;
+        margin-bottom: 5.4rem;
+    }
+
+    .headingBlock h3 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .headingBlock h2 {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        margin-bottom: 0;
+    }
+
+    .contentBlock p,
+    .contentBlock p span {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .filterTabs li {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+
+    .filterTabs {
+        margin-bottom: 5.6rem;
+    }
+
+    .form__field:placeholder-shown~.form__label {
+        top: -.5rem;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .form__field:focus~.form__label {
+        top: -2rem;
+    }
+
+    .form__field {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .filterResult {
+        gap: 3.2rem 3.2rem;
+    }
+
+    textarea.form__field:focus~.form__label {
+        top: 0rem;
+    }
+
+    textarea.form__field:placeholder-shown~.form__label {
+        top: 1.5rem !important;
+    }
+
+    .filterBlock .btn_wrapper {
+        margin: 3.2rem auto 0;
+    }
+
+    .filterBlock .btn_wrapper a.btn {
+        font-size: 1.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .topHeadingBlock~.topHeadingBlock {
+        margin-top: 7rem;
+    }
+
+    .topHeadingBlock~.topHeadingBlock .block p {
+        max-width: initial;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .topHeadingBlock~.topHeadingBlock .block a.btn {
+        font-size: 1.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .topHeadingBlock~.topHeadingBlock .block {
+        margin-top: 4rem;
+        display: block;
+    }
+
+    .topHeadingBlock~.topHeadingBlock .block p {
+        margin-bottom: 0;
+    }
+
+    .topHeadingBlock~.topHeadingBlock .block .btn_wrapper {
+        margin: 2.4rem auto 0;
+    }
+
+    .topHeadingBlock~.topHeadingBlock .block .content {
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid #303030;
+    }
+
+    .topHeadingBlock~.topHeadingBlock .block .content:last-child {
+        margin-bottom: 0;
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.contactSection .filterBlock .filterResult.activeTabs {
+    display: flex !important;
+}
+
+.btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2px;
+    display: inline-block;
+    max-width: max-content;
+}
+
+.btn-wrapper {
+    button {
+        border: 0;
+        background: transparent;
+    }
+}
+.form__group{
+    flex-direction: column;
+
+    span{
+        display: block;
+        width: 100%;
+        color:red;
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 5px;
+       @media (max-width:767px) {
+        font-size: 14px;
+        line-height: 16px;
+       }
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    textarea {
+        @media (max-width:767px) {
+            
+        font-size: 16px;
+        }
+    }
+
+}
+
+
+   

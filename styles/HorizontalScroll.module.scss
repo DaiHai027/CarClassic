@@ -1,0 +1,141 @@
+    @import 'variables';
+    .HorizontalScrollBlock {
+        align-items: center;
+        gap: 4rem;
+        will-change: transform;
+        @media (min-width:992px) {
+            min-height: 75vh;
+            max-height: 100vh !important;
+        }
+        @media (max-width: 1199px) and (orientation: portrait) {
+            min-height: initial;
+        }
+        @media (min-width:1401px) {
+            gap: 10rem;
+        }
+        @media (max-width:1299px) {
+            gap: 7rem
+        }
+        @media (max-width:1199px) {
+            gap: 50px
+        }
+        @media (max-width:991px) {
+            gap: 30px;
+            width: 100%;
+            height: max-content;
+            margin-bottom: 3rem;
+        }
+        
+    }
+    .HorizontalScroll {
+        background-color: #000000;
+        padding: 14rem 0rem;
+        overflow-x: hidden;
+        position: relative;
+        z-index: 1;
+        @media (max-width: 1199px) and (orientation: portrait) {
+            padding: 0;
+        }
+        @media (max-width: 991px) {
+            padding: 140px 0rem 140px 0rem;
+        }
+        @media (max-width: 767px) {
+            padding: 64px 0rem 64px 0rem;
+        }
+        .imgWrapper {
+            width: 50.8rem;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+
+            @media (min-width:992px) {
+                height: 100%;
+            }
+            @media (max-width: 1199px) and (orientation: portrait) {
+                height: 60%;
+            }
+            @media (max-width:991px){
+                height: 80%;
+            }
+            @media (max-width:1199px) {
+                width: 450px;
+            }
+            @media (max-width:991px) {
+                height: 60%;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            @media (max-width:767px) {
+                width: 100%;
+            }
+            img {
+                width: 51.8rem;
+                height: 71.0rem;
+                object-fit: cover;
+
+                @media (min-width:992px) {
+                    height: 75vh;
+                }
+                @media (max-width: 1199px) and (orientation: portrait) {
+                    height: initial;
+                }
+                @media (max-width:1199px) {
+                    width: 508px;
+                    
+                }
+                @media (max-width:991px) {
+                    height: 762px;
+                }
+                @media (max-width: 767.5px) {
+                    height: 464px;
+                }
+            }
+        }
+        .contentWrapper {
+            width: 55rem;
+            @media (max-width:1299px) {
+                width: 56rem;
+            }
+            @media (max-width:1199px) {
+                width: 400px;
+            }
+            @media (max-width:991px) {
+                width: 500px;
+                flex-direction: column;
+                display: flex;
+                margin: 0 auto;
+            }
+           
+            h2 {
+                text-transform: uppercase;
+                width: 51.0rem;
+                @media (max-width:1199px) {
+                    width: 400px;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                @media (max-width:767px) {
+                    width: 25.3rem;
+                    font-size: 1.8rem;
+                    line-height: 2.1rem;
+                }
+            }
+            h3 {
+                color: $primary;
+                text-transform: uppercase;
+            }
+            p {
+                @media (max-width:1199px) {
+                    font-size: 16px;
+                    line-height:19.65px;
+                }
+                @media (max-width:767px) {
+                    font-size: 1.4rem;
+                    line-height: 2.2rem;
+                }
+            }
+        }
+    }
+
+   

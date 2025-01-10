@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+node_modules_/
+
+# Archive files (all .zip files)
+*.zip
+Archive.zip
+vandenberg-carclassic_grandsolution_dev.zip
+
+# Temporary system files (for macOS)
+__MACOSX/
+
+# Log files
+nohup.out
+
+# Temporary or backup files for config files
+ecosystem.config.js_
+package-lock.json_
+package.json_
+
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# for dev
+.htaccess
+ecosystem.config.js
+
+
